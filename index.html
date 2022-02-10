@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header id="header">
+    <h1>
+      <a href="http://www.alura.com.br" target="_blank" rel="noopener noreferrer"><img src="./img/logo.svg" alt="logo-alura"></a>
+    </h1>
+  </header>
+
+  <div class="pagina pagina-inicial ">
+    <button class="btn btn-play">Começar a jogar</button>
+    <button class="btn btn-add">Adicionar nova palavra</button>
+  </div>
+
+  <div class="pagina pagina-adicionar hidden">
+    <textarea class="adicionar-texto" placeholder="Digite uma palavra ou frase" maxlength="8"></textarea>
+    <div class="aviso">
+      <img src="img/aviso.svg" alt="aviso"> 
+      <p>Máx de 8 letras</p>
+    </div>
+    <div>
+      <button class="btn btn-salvar">Salvar e começar</button>
+      <button class="btn btn-cancelar">Cancelar</button>
+    </div>
+  </div>
+
+  <div class="pagina pagina-jogo hidden">
+    <canvas class="jogo"></canvas>
+    <div class="container-btn">
+      <button class="btn btn-novo-jogo">Novo Jogo</button>
+      <button class="btn btn-desistir">Desistir</button>
+    </div>
+  </div>  
+
+  <script src="./js/script.js"></script>
+
+  
+</body>
+</html>
